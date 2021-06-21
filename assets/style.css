@@ -1,0 +1,41 @@
+/*
+  Style for take-home challenge
+  Author: Michelly Nakazawa
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 100%;
+  font-family: sans-serif;
+}
+div {
+  box-sizing: border-box;
+}
+.single-page {
+  background-color: #000;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-primary {
+  position: absolute;
+  top: 50%;
+  background-color: #04aa51;
+  border-color: #04aa51;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  min-width: 250px;
+  padding: 10px;
+}
+.button-primary:hover {
+  background-color: #049b4a;
+  border-color: #049b4a;
+  cursor: pointer;
+}
