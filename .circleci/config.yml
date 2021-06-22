@@ -7,4 +7,3 @@ workflows:
       - cypress/run:
           record: false 
           parallel: false
-          working_directory: '~/project/app'
