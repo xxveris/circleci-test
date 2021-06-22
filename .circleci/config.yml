@@ -4,15 +4,10 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/install:
-          build: 'npm run build'
-          working_directory: '~/project/app'
       - cypress/run:
           requires:
             - cypress/install
           record: false 
           parallel: true
           parallelism: 4 
-          group: 'all tests' 
-          start: 'npm start' 
           working_directory: '~/project/app'
