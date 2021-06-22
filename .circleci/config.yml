@@ -6,6 +6,5 @@ workflows:
     jobs:
       - cypress/run:
           record: false 
-          parallel: true
-          parallelism: 4 
+          parallel: false
           working_directory: '~/project/app'
