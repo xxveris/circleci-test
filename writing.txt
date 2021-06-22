@@ -1,0 +1,38 @@
+Subject: Re: Trigger a specific workflow depending on source file changes
+Message:
+
+Hi Joe,
+
+Michelly with CircleCI here. Thanks for reaching out.
+
+You might need to use the path-filtering orb. Please follow the following steps.
+
+Enable the Setup Workflows setting it to true (Project Settings -> Advanced -> At the bottom)
+After signing up to the preview, navigate to the project settings page on CircleCI and enable the "Run Setup Workflows" setting.
+Move your existing config to .circleci/continue_config.yml. Create workflows for each project and for the common shared folder.
+On the .circleci/config.yml, add the setup-workflow
+Check here how to set it correctly 
+Make sure to match the paths and parameters in the mapping to your project.
+Finally, commit/push this branch.
+
+------
+
+FAQ
+
+What is an orb ?
+Orbs are packages that help with the integration and you can use to simplify the build. Please check the link below for more information. https://circleci.com/docs/2.0/orb-intro/#section=configuration
+
+What is path-filtering orb ?
+Path-filtering is a package that helps with monorepo repositories. Please check the links below for more information. 
+https://circleci.com/developer/orbs/orb/circleci/path-filtering
+______
+
+
+If you have any other questions or need help with anything else don't hesitate to ask. I'm always happy to help!
+
+Looking forward to hearing back from you soon.
+
+Best regards,
+
+Michelly
+CircleCI | Support Engineer
