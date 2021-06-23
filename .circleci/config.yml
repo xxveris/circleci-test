@@ -7,3 +7,4 @@ workflows:
       - cypress/run:
           record: false 
           parallel: false
+          no-workspace: true
