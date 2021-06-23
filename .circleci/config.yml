@@ -6,4 +6,5 @@ workflows:
     jobs:
       - cypress/run:
           record: false 
-          parallel: false
+          parallel: true
+          parallelism: 4
